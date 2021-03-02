@@ -5,7 +5,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>          Achetons l'amicale
+</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://app.snipcart.com"></link>
         <link rel="preconnect" href="https://cdn.snipcart.com"></link>
@@ -15,6 +16,10 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+
+        <h2>
+          Achetons l'amicale
+        </h2>
        <button class="snipcart-add-item"
           data-item-id="tableau de fou"
           data-item-price="123"
