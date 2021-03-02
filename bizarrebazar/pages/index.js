@@ -20,15 +20,17 @@ export default function Home() {
         <h2>
           Achetons l'amicale
         </h2>
+        <p>
        <button class="snipcart-add-item"
           data-item-id="Local de fou"
           data-item-price="230000"
           data-item-url="/index"
           data-item-description="Un superbe local en plein coeur de la guillotiere."
-          data-item-name="un tableau de fou">
+          data-item-name="Local de fou">
           Ajouter au panier
         </button>
-        <button class="snipcart-checkout">CPasser la commande</button>
+    </p>
+        <button class="snipcart-checkout">Passer la commande</button>
       </main>
 
       <footer className={styles.footer}>
