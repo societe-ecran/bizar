@@ -21,25 +21,20 @@ export default function Home() {
           Achetons l'amicale
         </h2>
        <button class="snipcart-add-item"
-          data-item-id="tableau de fou"
-          data-item-price="123"
+          data-item-id="Local de fou"
+          data-item-price="230000"
           data-item-url="/index"
-          data-item-description="Un superbe objet en soutien pour l'achat de l'Amicale."
+          data-item-description="Un superbe local en plein coeur de la guillotiere."
           data-item-name="un tableau de fou">
-          Add to cart
+          Ajouter au panier
         </button>
-        <button class="snipcart-checkout">Click here to checkout</button>
+        <button class="snipcart-checkout">CPasser la commande</button>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+  
+          Powered by Télécrans de derrière les fagots
+         
       </footer>
     </div>
   )
