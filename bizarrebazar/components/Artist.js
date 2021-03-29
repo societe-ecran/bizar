@@ -52,7 +52,7 @@ export default function Artist(props) {
   }
 
   return (
-    <div className="border-t border-black pt-3 ml-6 mr-6 LibreBaskerville">
+    <div className="border-t border-black pt-3 ml-6 mr-6 LibreBaskerville word-break">
       <div className="mb-3">
         <div className="text-xl LibreBaskerville">
           {artiste.fields.nomDeLartiste}

@@ -134,7 +134,7 @@ const SideMenu = styled.div`
         <a className='textDecorationNone hidden md:inline-flex ' >L'Amicale du Futur, 31 rue Sébastien Gryphe Lyon 7e</a>
       </Link>
       <Link href="https://amicale.online/">
-        <a className='textDecorationNone  md:hidden pl-6 ' >L'Amicale du Futur, Lyon 7e</a>
+        <a className='textDecorationNone  md:hidden ml-6 ' >L'Amicale du Futur, Lyon 7e</a>
       </Link>
       <div className="flex justify-around hidden md:inline-flex">
         <div className="mr-6">

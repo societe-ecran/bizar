@@ -23,7 +23,7 @@ export default function Home({ artistes = [] }, props) {
 
   return (
     <html lang="fr">
-      <div className=" bgColor">
+      <div className=" bgColor scrollBarColor">
         <Head>
           <title>L'Amicale | Bizarre Bazar</title>
           <link rel="icon" href="/favicon.ico" />
