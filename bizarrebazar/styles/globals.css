@@ -1,16 +1,124 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "LibreBaskerville";
+  src: url("/fonts/LibreBaskerville-Regular.ttf");
 }
 
-a {
-  color: inherit;
+@font-face {
+  font-family: "ARK-ES-DenseRegular";
+  src: url("/fonts/ARK-ES-DenseRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "fugue_headline";
+  src: url("/fonts/fugue_headline.otf");
+}
+
+
+@media(min-width: 768px){
+  .tailleImage{
+  width:600px;
+  }
+  
+}
+
+
+/* fonts */
+
+.LibreBaskerville{
+  font-family:'LibreBaskerville'
+}
+
+.arkm{
+  font-family:'ARK-ES-DenseRegular'
+}
+
+.fugue{
+  font-family:'fugue_headline'
+}
+
+
+/* page index */
+.srollbar-none{
+  scrollbar-width: none;
+}
+
+.height-control{
+  height: 94vh;
+}
+
+
+
+/* page bizarre bazar */
+.carousel-control-next {
+  filter: invert(100%);
+}
+.carousel-control-prev {
+  filter: invert(100%);
+}
+.carousel-control-prev-icon {
+  width: 32px;
+  height: 32px;
+  opacity: 0;
+}
+.carousel-control-next-icon {
+  width: 32px;
+  height: 32px;
+  opacity: 10;
+}
+
+.tailleImage{
+  width:600px;
+
+}
+
+.bgColor{
+ background-color: #f6f036
+}
+
+.textDecorationNone{
   text-decoration: none;
+  color: black;
 }
 
-* {
-  box-sizing: border-box;
+.textDecorationNone :hover{
+  text-decoration: none;
+  color: black;
 }
+
+.navigation-wrapper {
+  position: relative;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.arrow--left {
+  left: 5px;
+  fill: rgb(0, 0, 0);
+}
+
+.arrow--right {
+  left: auto;
+  right: 5px;
+  fill: rgb(0, 0, 0);
+}
+
+.arrow--disabled {
+  fill: rgba(255, 255, 255, 0.5);
+  opacity: 0%;
+}
+
+
