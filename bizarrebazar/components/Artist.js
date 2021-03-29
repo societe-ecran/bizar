@@ -86,20 +86,20 @@ export default function Artist(props) {
                   controls={
                     artiste.fields.illustrationOeuvre1.length < 2 ? false : true
                   }
-                  justify-self="left"
-                  align-self="left"
+                  justify-self="center"
+                  align-self="start"
                   control-prev-icon-color="invert(100%)"
                   control-next-icon-color="invert(100%)"
                   indicators={false}
                   touch={true}
                   interval={null}
                 >
-                  {artiste.fields.illustrationOeuvre1.map((oeuvre, index) => {
+                  {artiste.fields.illustrationOeuvre1.map((oeuvre, i) => {
                     return (
-                      <Carousel.Item key={index}>
+                      <Carousel.Item key={i}>
                         <Zoom>
                           <img
-                            src={artiste.fields.illustrationOeuvre1[0].url.replace(
+                            src={artiste.fields.illustrationOeuvre1[i].url.replace(
                               "http",
                               "https"
                             )}
@@ -200,7 +200,7 @@ export default function Artist(props) {
                     <Carousel.Item key={i}>
                       <Zoom>
                         <img
-                          src={artiste.fields.illustrationOeuvre2[0].url.replace(
+                          src={artiste.fields.illustrationOeuvre2[i].url.replace(
                             "http",
                             "https"
                           )}
@@ -298,7 +298,7 @@ export default function Artist(props) {
                     <Carousel.Item key={i}>
                       <Zoom>
                         <img
-                          src={artiste.fields.illustrationOeuvre3[0].url.replace(
+                          src={artiste.fields.illustrationOeuvre3[i].url.replace(
                             "http",
                             "https"
                           )}
@@ -375,7 +375,7 @@ export default function Artist(props) {
                     <Carousel.Item key={i}>
                       <Zoom>
                         <img
-                          src={artiste.fields.illustrationOeuvre4[0].url.replace(
+                          src={artiste.fields.illustrationOeuvre4[i].url.replace(
                             "http",
                             "https"
                           )}
@@ -453,7 +453,7 @@ export default function Artist(props) {
                     <Carousel.Item key={i}>
                       <Zoom>
                         <img
-                          src={artiste.fields.illustrationOeuvre5[0].url.replace(
+                          src={artiste.fields.illustrationOeuvre5[i].url.replace(
                             "http",
                             "https"
                           )}
