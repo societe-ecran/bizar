@@ -100,11 +100,18 @@ export default function Home({ artistes = [] }, props) {
                 peintres… Vous avez la possibilité de les acheter si elles vous
                 plaisent afin de contribuer d’une manière originale à l’achat
                 des murs de l’Amicale. Vous pourrez également faire un don
-                supplémentaire lorsde votre commande. N'hésitez surtout pas!
+                supplémentaire lors de votre commande. N'hésitez surtout pas!
               </p>
                       {" "}
               <p>
-                Découvrez aussi les supers compiles de l’Amicale que les copines
+                Découvrez aussi                 
+                <a
+                  className="textDecorationNone hover:text-red-600"
+                  href="https://amicalementvotre.bandcamp.com/"
+                  target="_blank"
+                >
+                  les supers compiles de l’Amicale {" "}
+                </a>que les copines
                 et copains musiciens nous ont concoctés mais aussi une série
                 spéciale de t-shirts imprimé dans les ateliers de{" "}
                 <a
@@ -112,7 +119,7 @@ export default function Home({ artistes = [] }, props) {
                   href="https://www.grrrndzero.org/"
                   target="_blank"
                 >
-                  Grrrnd Zero
+                  Grrrnd Zero{" "}
                 </a>
                 avec les dessins de{" "}
                 <a
@@ -171,6 +178,7 @@ export default function Home({ artistes = [] }, props) {
               </p>
                       {" "}
               <p>
+                Pour plus de renseignements : bizarrebazar@riseup.net. 
                 Et rendez-vous prochainement pour un{" "}
                 <span className="arkm">
                   <strong>Bizarre</strong> Bazar{" "}
@@ -179,7 +187,7 @@ export default function Home({ artistes = [] }, props) {
               </p>
             </div>
 
-            <div className="pt-3 mx-6 text-xl pb-3">
+            {/*<div className="pt-3 mx-6 text-xl pb-3">
               <div className="arkm border-b border-t border-black py-1 mb-3">
                 <a
                   className="textDecorationNone hover:text-red-600"
@@ -195,7 +203,7 @@ export default function Home({ artistes = [] }, props) {
                 alt="cassette compil de l'Amicale!"
                 className="tailleImage"
               ></img>
-            </div>
+            </div>*/}
 
             {artistes.map((artiste, i) => {
               return <Artist artiste={artiste} />;
@@ -206,8 +214,8 @@ export default function Home({ artistes = [] }, props) {
                 Bouvarel, Aude Barrio, Ivan Brun, Rachid Bulbien, Bouteilleurz,
                 Marie Colin-Madan, Abraham Diaz, Lise Dua, Julien Dupont,
                 Margaux Duseigneur, EMDT, Benoît François, Lucas Ferrero,
-                Antoine Fisher, Marie-Anita Gaube, Alaric Garnier, Vincent
-                Guillermin, Huard, Marion Jdanoff, Jess, Zad Kokar, Romano
+                Antoine Fisher, Marie-Anita Gaube, Alaric Garnier, Lucile Gautier, 
+                Vincent Guillermin, Huard, Marion Jdanoff, Jess, Zad Kokar, Romano
                 Krang, Félicité Landrivon, Laho, Lashka, Oriane Lassus, Valentin
                 Lergès, Service Local, Gaelle Loth, La Tòrna, Hugues La Blanche,
                 Yannis La Macchia, Stephen Loye, Diane Malatesta, Lou Masduraud,

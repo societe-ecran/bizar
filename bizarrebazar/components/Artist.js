@@ -54,7 +54,7 @@ export default function Artist(props) {
   return (
     <div className="border-t border-black pt-3 ml-6 mr-6 LibreBaskerville word-break">
       <div className="mb-3">
-        <div className="text-xl LibreBaskerville">
+        <div className="text-4xl LibreBaskerville">
           {artiste.fields.nomDeLartiste}
         </div>
         <a
@@ -132,7 +132,7 @@ export default function Artist(props) {
                     data-item-price={artiste.fields.prixOeuvre1}
                     data-item-url="/bizarrebazar"
                     data-item-name={artiste.fields.titreOeuvre1}
-                    data-item-custom1-name="Prix libre / Faire un don :"
+                    data-item-custom1-name="Le prix des oeuvres est fixé à un montant minimun. N'hésitez pas à donner plus en soutien!"
                     data-item-custom1-options="0 euros [+0.00]| 5 euros[+5.00]| 10 euros[+10.00]| 15 euros[+15.00] | 20 euros[+20.00]|50 euros[+50.00]| 100 euros[+100.00]"
                     data-item-custom2-name="Taille"
                     data-item-custom2-options="S|M|L"
@@ -151,7 +151,7 @@ export default function Artist(props) {
                     data-item-price={artiste.fields.prixOeuvre1}
                     data-item-url="/bizarrebazar"
                     data-item-name={artiste.fields.titreOeuvre1}
-                    data-item-custom1-name="Prix libre / Faire un don :"
+                    data-item-custom1-name="Le prix des oeuvres est fixé à un montant minimun. N'hésitez pas à donner plus en soutien!"
                     data-item-custom1-options="0 euros [+0.00]| 5 euros[+5.00]| 10 euros[+10.00]| 15 euros[+15.00] | 20 euros[+20.00]|50 euros[+50.00]| 100 euros[+100.00]"
                     data-item-weight={
                       typeof artiste.fields.poidsOeuvre1 == undefined
@@ -231,7 +231,7 @@ export default function Artist(props) {
                     data-item-price={artiste.fields.prixOeuvre2}
                     data-item-url="/bizarrebazar"
                     data-item-name={artiste.fields.titreOeuvre2}
-                    data-item-custom1-name="Prix libre / Faire un don :"
+                    data-item-custom1-name="Le prix des oeuvres est fixé à un montant minimun. N'hésitez pas à donner plus en soutien!"
                     data-item-custom1-options="0 euros [+0.00]| 5 euros[+5.00]| 10 euros[+10.00]| 15 euros[+15.00] | 20 euros[+20.00]|50 euros[+50.00]| 100 euros[+100.00]"
                     data-item-custom2-name="Taille"
                     data-item-custom2-options="S|M|L"
@@ -250,7 +250,7 @@ export default function Artist(props) {
                     data-item-price={artiste.fields.prixOeuvre2}
                     data-item-url="/bizarrebazar"
                     data-item-name={artiste.fields.titreOeuvre2}
-                    data-item-custom1-name="Prix libre / Faire un don :"
+                    data-item-custom1-name="Le prix des oeuvres est fixé à un montant minimun. N'hésitez pas à donner plus en soutien!"
                     data-item-custom1-options="0 euros [+0.00]| 5 euros[+5.00]| 10 euros[+10.00]| 15 euros[+15.00] | 20 euros[+20.00]|50 euros[+50.00]| 100 euros[+100.00]"
                     data-item-weight={
                       typeof artiste.fields.poidsOeuvre2 == undefined
@@ -328,7 +328,7 @@ export default function Artist(props) {
                   data-item-price={artiste.fields.prixOeuvre3}
                   data-item-url="/bizarrebazar"
                   data-item-name={artiste.fields.titreOeuvre3}
-                  data-item-custom1-name="Prix libre / Faire un don :"
+                  data-item-custom1-name="Le prix des oeuvres est fixé à un montant minimun. N'hésitez pas à donner plus en soutien!"
                   data-item-custom1-options="0 euros [+0.00]| 5 euros[+5.00]| 10 euros[+10.00]| 15 euros[+15.00] | 20 euros[+20.00]|50 euros[+50.00]| 100 euros[+100.00]"
                   data-item-weight={
                     typeof artiste.fields.poidsOeuvre3 == undefined
@@ -405,7 +405,7 @@ export default function Artist(props) {
                   data-item-price={artiste.fields.prixOeuvre4}
                   data-item-url="/bizarrebazar"
                   data-item-name={artiste.fields.titreOeuvre4}
-                  data-item-custom1-name="Prix libre / Faire un don :"
+                  data-item-custom1-name="Le prix des oeuvres est fixé à un montant minimun. N'hésitez pas à donner plus en soutien!"
                   data-item-custom1-options="0 euros [+0.00]| 5 euros[+5.00]| 10 euros[+10.00]| 15 euros[+15.00] | 20 euros[+20.00]|50 euros[+50.00]| 100 euros[+100.00]"
                   data-item-weight={
                     typeof artiste.fields.poidsOeuvre4 == undefined
@@ -483,7 +483,7 @@ export default function Artist(props) {
                   data-item-price={artiste.fields.prixOeuvre5}
                   data-item-url="/bizarrebazar"
                   data-item-name={artiste.fields.titreOeuvre5}
-                  data-item-custom1-name="Prix libre / Faire un don :"
+                  data-item-custom1-name="Le prix des oeuvres est fixé à un montant minimun. N'hésitez pas à donner plus en soutien!"
                   data-item-custom1-options="0 euros [+0.00]| 5 euros[+5.00]| 10 euros[+10.00]| 15 euros[+15.00] | 20 euros[+20.00]|50 euros[+50.00]| 100 euros[+100.00]"
                   data-item-weight={
                     typeof artiste.fields.poidsOeuvre5 == undefined
@@ -550,7 +550,7 @@ export default function Artist(props) {
                   data-item-price={artiste.fields.prixOeuvre6}
                   data-item-url="/bizarrebazar"
                   data-item-name={artiste.fields.titreOeuvre6}
-                  data-item-custom1-name="Prix libre / Faire un don :"
+                  data-item-custom1-name="Le prix des oeuvres est fixé à un montant minimun. N'hésitez pas à donner plus en soutien!"
                   data-item-custom1-options="0 euros [+0.00]| 5 euros[+5.00]| 10 euros[+10.00]| 15 euros[+15.00] | 20 euros[+20.00]|50 euros[+50.00]| 100 euros[+100.00]"
                   data-item-weight={
                     typeof artiste.fields.poidsOeuvre6 == undefined
@@ -617,7 +617,7 @@ export default function Artist(props) {
                   data-item-price={artiste.fields.prixOeuvre7}
                   data-item-url="/bizarrebazar"
                   data-item-name={artiste.fields.titreOeuvre7}
-                  data-item-custom1-name="Prix libre / Faire un don :"
+                  data-item-custom1-name="Le prix des oeuvres est fixé à un montant minimun. N'hésitez pas à donner plus en soutien!"
                   data-item-custom1-options="0 euros [+0.00]| 5 euros[+5.00]| 10 euros[+10.00]| 15 euros[+15.00] | 20 euros[+20.00]|50 euros[+50.00]| 100 euros[+100.00]"
                   data-item-weight={
                     typeof artiste.fields.poidsOeuvre7 == undefined
