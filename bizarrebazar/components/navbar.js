@@ -3,19 +3,24 @@ import Link from "next/link";
 import { useRouter } from 'next/router'
 import { stack as Menu } from "react-burger-menu"
 import styled from "@emotion/styled";
+import { useMediaQuery } from "../utils/useMediaquery";
 
 export default function Navbar(props) {
-
   const [menuState, setMenuOpen] = useState(false);
   const closeMenu = () => {
     setMenuOpen(false);
   };
 
-
+  let isPageWide = useMediaQuery("(max-width: 768px)");
   const router = useRouter()
 
   let stick=''
   let bgColor = '#f6f036' 
+
+  if(isPageWide){
+    stick='sticky'
+  }else{stick=""}
+
 //   if(router.pathname === '/bizarrebazar'){
 //     bgColor='#f6f036' 
 //     stick='md:static'
@@ -129,7 +134,7 @@ const SideMenu = styled.div`
 
   return (
 <>
-    <div className={"top-0 flex justify-between py-2  md:mx-6 md:pb-6 LibreBaskerville text-lg border-b border-black sticky z-40 textDecorationNone " + stick} style={style} >
+    <div className={"top-0 flex justify-between py-2  md:mx-6 md:pb-6 LibreBaskerville text-lg border-b border-black stick z-40 textDecorationNone " + stick} style={style} >
       <Link href="https://bizar.vercel.app/">
         <a className='textDecorationNone hidden md:inline-flex ' >L'Amicale du Futur, 31 rue Sébastien Gryphe Lyon 7e</a>
       </Link>

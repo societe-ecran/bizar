@@ -174,6 +174,7 @@ export default function Artist(props) {
           {artiste.fields.titreOeuvre2 && (
             <div className="keen-slider__slide">
               {isPageWide ? (
+                artiste.fields.illustrationOeuvre2 &&
                 <Zoom>
                   <img
                     src={artiste.fields.illustrationOeuvre2[0].url.replace(
@@ -272,6 +273,7 @@ export default function Artist(props) {
           {artiste.fields.titreOeuvre3 && (
             <div className="keen-slider__slide">
               {isPageWide ? (
+                  artiste.fields.illustrationOeuvre3 &&
                 <Zoom>
                   <img
                     src={artiste.fields.illustrationOeuvre3[0].url.replace(
@@ -349,6 +351,7 @@ export default function Artist(props) {
           {artiste.fields.titreOeuvre4 && (
             <div className="keen-slider__slide">
               {isPageWide ? (
+                  artiste.fields.illustrationOeuvre4 &&
                 <Zoom>
                   <img
                     src={artiste.fields.illustrationOeuvre4[0].url.replace(
@@ -427,6 +430,7 @@ export default function Artist(props) {
           {artiste.fields.titreOeuvre5 && (
             <div className="keen-slider__slide">
               {isPageWide ? (
+                  artiste.fields.illustrationOeuvre5 &&
                 <Zoom>
                   <img
                     src={artiste.fields.illustrationOeuvre5[0].url.replace(
