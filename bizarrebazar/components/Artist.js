@@ -68,6 +68,7 @@ export default function Artist(props) {
       <div className="navigation-wrapper mb-3 ">
         <div ref={sliderRef} className="keen-slider">
           {/*oeuvre 1*/}
+
           {artiste.fields.titreOeuvre1 && (
             <div className="keen-slider__slide  ">
               {isPageWide ? (
@@ -186,7 +187,7 @@ export default function Artist(props) {
               ) : (
                 <Carousel
                   controls={
-                    artiste.fields.illustrationOeuvre2.length < 2 ? false : true
+                    artiste.fields.illustrationOeuvre2?.length < 2 ? false : true
                   }
                   justify-self="center"
                   align-self="center"
@@ -196,7 +197,7 @@ export default function Artist(props) {
                   touch={true}
                   interval={null}
                 >
-                  {artiste.fields.illustrationOeuvre2.map((oeuvre, i) => (
+                  {artiste.fields.illustrationOeuvre2?.map((oeuvre, i) => (
                     <Carousel.Item key={i}>
                       <Zoom>
                         <img
@@ -284,7 +285,7 @@ export default function Artist(props) {
               ) : (
                 <Carousel
                   controls={
-                    artiste.fields.illustrationOeuvre3.length < 2 ? false : true
+                    artiste.fields.illustrationOeuvre3?.length < 2 ? false : true
                   }
                   justify-self="center"
                   align-self="center"
@@ -294,7 +295,7 @@ export default function Artist(props) {
                   touch={true}
                   interval={null}
                 >
-                  {artiste.fields.illustrationOeuvre3.map((oeuvre, i) => (
+                  {artiste.fields.illustrationOeuvre3?.map((oeuvre, i) => (
                     <Carousel.Item key={i}>
                       <Zoom>
                         <img
@@ -361,7 +362,7 @@ export default function Artist(props) {
               ) : (
                 <Carousel
                   controls={
-                    artiste.fields.illustrationOeuvre4.length < 2 ? false : true
+                    artiste.fields.illustrationOeuvre4?.length < 2 ? false : true
                   }
                   justify-self="center"
                   align-self="center"
@@ -371,7 +372,7 @@ export default function Artist(props) {
                   touch={true}
                   interval={null}
                 >
-                  {artiste.fields.illustrationOeuvre4.map((oeuvre, i) => (
+                  {artiste.fields.illustrationOeuvre4?.map((oeuvre, i) => (
                     <Carousel.Item key={i}>
                       <Zoom>
                         <img
@@ -439,7 +440,7 @@ export default function Artist(props) {
               ) : (
                 <Carousel
                   controls={
-                    artiste.fields.illustrationOeuvre5.length < 2 ? false : true
+                    artiste.fields.illustrationOeuvre5?.length < 2 ? false : true
                   }
                   justify-self="center"
                   align-self="center"
@@ -449,7 +450,7 @@ export default function Artist(props) {
                   touch={true}
                   interval={null}
                 >
-                  {artiste.fields.illustrationOeuvre5.map((oeuvre, i) => (
+                  {artiste.fields.illustrationOeuvre5?.map((oeuvre, i) => (
                     <Carousel.Item key={i}>
                       <Zoom>
                         <img
