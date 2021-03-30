@@ -130,10 +130,10 @@ const SideMenu = styled.div`
   return (
 <>
     <div className={"top-0 flex justify-between py-2  md:mx-6 md:pb-6 LibreBaskerville text-lg border-b border-black sticky z-40 textDecorationNone " + stick} style={style} >
-      <Link href="https://amicale.online/">
+      <Link href="https://bizar.vercel.app/">
         <a className='textDecorationNone hidden md:inline-flex ' >L'Amicale du Futur, 31 rue Sébastien Gryphe Lyon 7e</a>
       </Link>
-      <Link href="https://amicale.online/">
+      <Link href="https://bizar.vercel.app/">
         <a className='textDecorationNone  md:hidden ml-6 ' >L'Amicale du Futur, Lyon 7e</a>
       </Link>
       <div className="flex justify-around hidden md:inline-flex">
@@ -146,11 +146,11 @@ const SideMenu = styled.div`
             Appel à dons
           </a>
         </div>
-        <div className="mr-6 arkm hidden md:inline-flex">
+        {/*<div className="mr-6 arkm hidden md:inline-flex">
           <Link href="/bizarrebazar">
             <a className='textDecorationNone'  >Bizarre Bazar</a>
           </Link>
-        </div>
+        </div>*/}
 
         {/* <div className="mr-3 hidden md:inline-flex ">
           <Link href="/cantines">
@@ -173,7 +173,7 @@ smartphone
 
         <SideMenu>
           <Menu isOpen={menuState.menuOpen} className="borderSlide">
-          <a href="https://amicale.online/"
+          <a href="https://bizar.vercel.app/"
           target="_blank">
         <a className='textDecorationNone' >L'Amicale</a>
       </a>
@@ -187,7 +187,7 @@ smartphone
           </a>
         </div>
         <div className="mr-6 mt-4 arkm">
-          <Link href="/bizarrebazar">
+          <Link href="https://bizar.vercel.app/">
             <a className='textDecorationNone'>Bizarre Bazar</a>
           </Link>
         </div>
