@@ -24,7 +24,6 @@ export default function Home({ artistes = [] }, props) {
   return (
     <html lang="fr">
       <div className=" bgColor scrollBarColor">
-        
         <Head>
           <title>L'Amicale | Bizarre Bazar</title>
           <link rel="icon" href="/favicon.ico" />
@@ -85,37 +84,39 @@ export default function Home({ artistes = [] }, props) {
               <span class="snipcart-total-price"></span> */}
             </div>
 
-            <div className=" text-sm  pl-6 px-6 LibreBaskerville md:text-xl">
-              <p className="md:border-t md:border-black LibreBaskerville pt-3">
+            <div className="ml-3 mr-3 md:mx-6 LibreBaskerville md:text-xl">
+              <div className="md:border-t md:border-black LibreBaskerville pt-3">
                 <span className="arkm LibreBaskerville">
                   <strong>Bizarre</strong> Bazar{" "}
                 </span>
-                a été créé pour tenter de rendre visible un geste qui nous tient
-                à coeur : l’infinie puissance créatrice de nos proches au profit
-                de l’achat de l’Amicale. Vous trouverez donc ici des pièces
-                toutes fantastiques qui nous ont été généreusement données par
-                nos ami.e.s musicien.nes, artistes, plasticien.nes,
-                illustrateur.rices, photographes, imprimeuse.rs, tisserand.es,
-                potier.es, bijoutier.es, graphistes, designeuse.rs textile,
-                peintres… Vous avez la possibilité de les acheter si elles vous
-                plaisent afin de contribuer d’une manière originale à l’achat
-                des murs de l’Amicale. Vous pourrez également faire un don
-                supplémentaire lors de votre commande. N'hésitez surtout pas!
-              </p>
-                      {" "}
-              <p>
-                Découvrez aussi                 
+                BizarreBazar a été créé pour tenter de rendre visible un geste
+                qui nous tient à coeur : l’infinie puissance créatrice de nos
+                proches au profit de l’achat de l’Amicale. Vous trouverez donc
+                ici des pièces toutes fantastiques qui nous ont été
+                généreusement données par nos ami.e.s musicien.nes, artistes,
+                plasticien.nes, illustrateur.rices, photographes, imprimeuse.rs,
+                tisserand.es, potier.es, bijoutier.es, graphistes, designeuse.rs
+                textile, peintres… Vous avez la possibilité de les acheter si
+                elles vous plaisent afin de contribuer d’une manière originale à
+                l’achat des murs de l’Amicale. Vous pourrez également faire un
+                don supplémentaire lors de votre commande. N'hésitez surtout
+                pas!
+              </div>
+                    
+              <div>
+                Découvrez aussi{" "}
                 <a
-                  className="textDecorationNone hover:text-red-600"
+                  className="textDecorationNone underline text-black hover:text-red-600"
                   href="https://amicalementvotre.bandcamp.com/"
                   target="_blank"
                 >
-                  les supers compiles de l’Amicale {" "}
-                </a>que les copines
-                et copains musiciens nous ont concoctés mais aussi une série
-                spéciale de t-shirts imprimé dans les ateliers de{" "}
+                  les supers compiles de l’Amicale{" "}
+                </a>
+                que les copines et copains musiciens nous ont concoctés mais
+                aussi une série spéciale de t-shirts imprimé dans les ateliers
+                de{" "}
                 <a
-                  className="textDecorationNone hover:text-red-600"
+                  className="underline text-black underline text-black hover:text-red-600"
                   href="https://www.grrrndzero.org/"
                   target="_blank"
                 >
@@ -123,7 +124,7 @@ export default function Home({ artistes = [] }, props) {
                 </a>
                 avec les dessins de{" "}
                 <a
-                  className="textDecorationNone hover:text-red-600"
+                  className="underline text-black underline text-black hover:text-red-600"
                   href="https://felicite.land/"
                   target="_blank"
                 >
@@ -131,7 +132,7 @@ export default function Home({ artistes = [] }, props) {
                 </a>
                 ,
                 <a
-                  className="textDecorationNone hover:text-red-600"
+                  className="underline text-black underline text-black hover:text-red-600"
                   href="https://servicelocal.fr/"
                   target="_blank"
                 >
@@ -140,7 +141,7 @@ export default function Home({ artistes = [] }, props) {
                 </a>
                 ,
                 <a
-                  className="textDecorationNone hover:text-red-600"
+                  className="underline text-black underline text-black hover:text-red-600"
                   href="https://marionjdanoff.net/"
                   target="_blank"
                 >
@@ -149,7 +150,7 @@ export default function Home({ artistes = [] }, props) {
                 </a>
                 ,
                 <a
-                  className="textDecorationNone hover:text-red-600"
+                  className="underline text-black underline text-black hover:text-red-600"
                   href="https://www.alaricgarnier.fr/"
                   target="_blank"
                 >
@@ -158,7 +159,7 @@ export default function Home({ artistes = [] }, props) {
                 </a>
                 ,
                 <a
-                  className="textDecorationNone hover:text-red-600"
+                  className="underline text-black underline text-black hover:text-red-600"
                   href="http://www.benoitfrancois.art/"
                   target="_blank"
                 >
@@ -167,7 +168,7 @@ export default function Home({ artistes = [] }, props) {
                 </a>
                 , et
                 <a
-                  className="textDecorationNone hover:text-red-600"
+                  className="underline text-black underline text-black hover:text-red-600"
                   href="https://www.instagram.com/soleil_de_nuit__/"
                   target="_blank"
                 >
@@ -175,16 +176,15 @@ export default function Home({ artistes = [] }, props) {
                   Soleil de nuit
                 </a>{" "}
                 !
-              </p>
-                      {" "}
-              <p>
-                Pour plus de renseignements : bizarrebazar@riseup.net. 
-                Et rendez-vous prochainement pour un{" "}
-                <span className="arkm">
-                  <strong>Bizarre</strong> Bazar{" "}
-                </span>{" "}
-                en réel !! Bonne visite !
-              </p>
+              </div>
+              <div>
+                {" "}Rendez-vous prochainement pour un BIZARRE BAZAR en réel !!
+              </div>
+              <div>Bonne visite.</div>
+              <br />
+              <div className="mb-3">
+                Pour plus de renseignements : bizarrebazar@riseup.net.
+              </div>
             </div>
 
             {/*<div className="pt-3 mx-6 text-xl pb-3">
@@ -214,19 +214,20 @@ export default function Home({ artistes = [] }, props) {
                 Bouvarel, Aude Barrio, Ivan Brun, Rachid Bulbien, Bouteilleurz,
                 Marie Colin-Madan, Abraham Diaz, Lise Dua, Julien Dupont,
                 Margaux Duseigneur, EMDT, Benoît François, Lucas Ferrero,
-                Antoine Fisher, Marie-Anita Gaube, Alaric Garnier, Lucile Gautier, 
-                Vincent Guillermin, Huard, Marion Jdanoff, Jess, Zad Kokar, Romano
-                Krang, Félicité Landrivon, Laho, Lashka, Oriane Lassus, Valentin
-                Lergès, Service Local, Gaelle Loth, La Tòrna, Hugues La Blanche,
-                Yannis La Macchia, Stephen Loye, Diane Malatesta, Lou Masduraud,
-                Antoine Machelot, Suka Mabuk, Barbara Meuli, Éditions Nuit
-                Noire, Nagawika, Margaux Othats, Atelier Peso Pluma, Tristan
-                Perreton, Thomas Perrodin, Ratcharge, Coline Rosoux, Simon
-                Roussin, Octave Rimbert-Rivière, Soleil de nuit, Henri Tattooer,
-                Renaud Thomas, Torpe, Laurène Vernet, Lia Vé, Ema Xp, pour vos
-                généreux dons. Merci à Olivier Bral, Clément Rossi, Clémentine
-                Léon, Gautier Scerra, et Hugues pour la réalisation des
-                impressions. Lise, Romain, Colline, pour la compilation.
+                Antoine Fisher, Marie-Anita Gaube, Alaric Garnier, Lucile
+                Gautier, Vincent Guillermin, Huard, Marion Jdanoff, Jess, Zad
+                Kokar, Romano Krang, Félicité Landrivon, Laho, Lashka, Oriane
+                Lassus, Valentin Lergès, Service Local, Gaelle Loth, La Tòrna,
+                Liquid Test Press, Julie Kieffer, Hugues La Blanche, Yannis La
+                Macchia, Stephen Loye, Diane Malatesta, Lou Masduraud, Antoine
+                Machelot, Suka Mabuk, Barbara Meuli, Éditions Nuit Noire,
+                Nagawika, Margaux Othats, Atelier Peso Pluma, Tristan Perreton,
+                Thomas Perrodin, Ratcharge, Coline Rosoux, Simon Roussin, Octave
+                Rimbert-Rivière, Soleil de nuit, Henri Tattooer, Renaud Thomas,
+                Torpe, Laurène Vernet, Lia Vé, Ema Xp, pour vos généreux dons.
+                Merci à Olivier Bral, Clément Rossi, Clémentine Léon, Gautier
+                Scerra, et Hugues pour la réalisation des impressions. Lise,
+                Romain, Colline, pour la compilation.
               </div>
             </div>
           </div>

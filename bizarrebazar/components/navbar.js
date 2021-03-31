@@ -134,12 +134,12 @@ const SideMenu = styled.div`
 
   return (
 <>
-    <div className={"top-0 flex justify-between py-2  md:mx-6 md:pb-6 LibreBaskerville text-lg border-b border-black stick z-40 textDecorationNone " + stick} style={style} >
+    <div className={"top-0 flex justify-between py-2 md:mx-6 md:pb-6 LibreBaskerville text-lg border-b border-black stick z-40 textDecorationNone " + stick} style={style} >
       <Link href="https://bizar.vercel.app/">
         <a className='textDecorationNone hidden md:inline-flex ' >L'Amicale du Futur, 31 rue Sébastien Gryphe Lyon 7e</a>
       </Link>
       <Link href="https://bizar.vercel.app/">
-        <a className='textDecorationNone  md:hidden ml-6 ' >L'Amicale du Futur, Lyon 7e</a>
+        <a className='textDecorationNone  md:hidden ml-3 ' >L'Amicale du Futur, Lyon 7e</a>
       </Link>
       <div className="flex justify-around hidden md:inline-flex">
         <div className="mr-6">

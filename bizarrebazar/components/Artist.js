@@ -28,7 +28,7 @@ export default function Artist(props) {
     return (
       <svg
         onClick={props.onClick}
-        className={"arrow arrow--left" + disabeld}
+        className={"arrow arrow--left" + disabeld} pl-6
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
       >
@@ -42,7 +42,7 @@ export default function Artist(props) {
     return (
       <svg
         onClick={props.onClick}
-        className={"arrow arrow--right" + disabeld}
+        className= {"arrow arrow--right" + disabeld}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
       >
@@ -52,14 +52,14 @@ export default function Artist(props) {
   }
 
   return (
-    <div className="border-t border-black pt-3 ml-6 mr-6 LibreBaskerville word-break">
+    <div className="border-t border-black pt-3 ml-3 mr-6 md:ml-6 md:mr-12 LibreBaskerville word-break">
       <div className="mb-3">
-        <div className="text-4xl LibreBaskerville">
+        <div className="text-l md:text-2xl LibreBaskerville">
           {artiste.fields.nomDeLartiste}
         </div>
         <a
           href={artiste.fields.siteDeLartiste}
-          className="hover:text-red-600 textDecorationNone text-xl LibreBaskerville"
+          className="hover:text-red-600 textDecorationNone  text-l md:text-xl LibreBaskerville"
           target="_blank"
         >
           {artiste.fields.siteDeLartiste}
