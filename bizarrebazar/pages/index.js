@@ -178,7 +178,7 @@ export default function Home({ artistes = [] }, props) {
             <div>Bonne visite.</div>
             <br />
             <div className="mb-3">
-              Pour plus de renseignements : bizarrebazar@riseup.net.
+              Pour plus de renseignements : bizarrebazar[at]riseup.net.
             </div>
           </div>
 
