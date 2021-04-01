@@ -79,10 +79,10 @@ export default function Home({ artistes = [] }, props) {
 
           <div className="ml-3 mr-3 md:mx-6 LibreBaskerville md:text-xl">
             <div className="md:border-t md:border-black LibreBaskerville pt-3">
-              <span className="arkm LibreBaskerville">
+              <span className="arkm">
                 <strong>Bizarre</strong> Bazar{" "}
               </span>
-              BizarreBazar a été créé pour tenter de rendre visible un geste qui
+              a été créé pour tenter de rendre visible un geste qui
               nous tient à coeur : l’infinie puissance créatrice de nos proches
               au profit de l’achat de l’Amicale. Vous trouverez donc ici des
               pièces toutes fantastiques qui nous ont été généreusement données
@@ -105,9 +105,9 @@ export default function Home({ artistes = [] }, props) {
                 les supers compiles de l’Amicale{" "}
               </a>
               que les copines et copains musiciens nous ont concoctés mais aussi
-              une série spéciale de t-shirts imprimé dans les ateliers de{" "}
+              une série spéciale de t-shirts imprimés dans les ateliers de{" "}
               <a
-                className="underline text-black underline text-black hover:text-red-600"
+                className="underline text-black underline text-black hover:text-red-600 text-l md:text-xl"
                 href="https://www.grrrndzero.org/"
                 target="_blank"
               >
@@ -170,7 +170,10 @@ export default function Home({ artistes = [] }, props) {
             </div>
             <div>
               {" "}
-              Rendez-vous prochainement pour un BIZARRE BAZAR en réel !!
+              Rendez-vous prochainement pour un{" "}             
+              <span className="arkm">
+                <strong>Bizarre</strong> Bazar{" "}
+              </span> en réel !!
             </div>
             <div>Bonne visite.</div>
             <br />
@@ -218,7 +221,7 @@ export default function Home({ artistes = [] }, props) {
               Henri Tattooer, Renaud Thomas, Torpe, Laurène Vernet, Lia Vé, Ema
               Xp, pour vos généreux dons. Merci à Olivier Bral, Clément Rossi,
               Clémentine Léon, Gautier Scerra, et Hugues pour la réalisation des
-              impressions. Lise, Romain, Colline, pour la compilation.
+              impressions et à Lise, Romain, Colline pour la compilation.
             </div>
           </div>
         </Layout>
