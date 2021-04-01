@@ -133,7 +133,7 @@ export default function Artist(props) {
                     className="snipcart-add-item text-sm underline hover:text-red-600"
                     data-item-id={artiste.fields.titreOeuvre1}
                     data-item-price={artiste.fields.prixOeuvre1}
-                    data-item-url="/bizarrebazar"
+                    data-item-url="/"
                     data-item-name={artiste.fields.titreOeuvre1}
                     data-item-custom1-name="Le prix des oeuvres est fixé à un montant minimun. N'hésitez pas à donner plus en soutien!"
                     data-item-custom1-options="0 euros [+0.00]| 5 euros[+5.00]| 10 euros[+10.00]| 15 euros[+15.00] | 20 euros[+20.00]|50 euros[+50.00]| 100 euros[+100.00]"
@@ -152,7 +152,7 @@ export default function Artist(props) {
                     className="snipcart-add-item text-sm underline hover:text-red-600"
                     data-item-id={artiste.fields.titreOeuvre1}
                     data-item-price={artiste.fields.prixOeuvre1}
-                    data-item-url="/bizarrebazar"
+                    data-item-url="/"
                     data-item-name={artiste.fields.titreOeuvre1}
                     data-item-custom1-name="Le prix des oeuvres est fixé à un montant minimun. N'hésitez pas à donner plus en soutien!"
                     data-item-custom1-options="0 euros [+0.00]| 5 euros[+5.00]| 10 euros[+10.00]| 15 euros[+15.00] | 20 euros[+20.00]|50 euros[+50.00]| 100 euros[+100.00]"
@@ -234,7 +234,7 @@ export default function Artist(props) {
                     className="snipcart-add-item text-sm underline hover:text-red-600"
                     data-item-id={artiste.fields.titreOeuvre2}
                     data-item-price={artiste.fields.prixOeuvre2}
-                    data-item-url="/bizarrebazar"
+                    data-item-url="/"
                     data-item-name={artiste.fields.titreOeuvre2}
                     data-item-custom1-name="Le prix des oeuvres est fixé à un montant minimun. N'hésitez pas à donner plus en soutien!"
                     data-item-custom1-options="0 euros [+0.00]| 5 euros[+5.00]| 10 euros[+10.00]| 15 euros[+15.00] | 20 euros[+20.00]|50 euros[+50.00]| 100 euros[+100.00]"
@@ -253,7 +253,7 @@ export default function Artist(props) {
                     className="snipcart-add-item text-sm underline hover:text-red-600"
                     data-item-id={artiste.fields.titreOeuvre2}
                     data-item-price={artiste.fields.prixOeuvre2}
-                    data-item-url="/bizarrebazar"
+                    data-item-url="/"
                     data-item-name={artiste.fields.titreOeuvre2}
                     data-item-custom1-name="Le prix des oeuvres est fixé à un montant minimun. N'hésitez pas à donner plus en soutien!"
                     data-item-custom1-options="0 euros [+0.00]| 5 euros[+5.00]| 10 euros[+10.00]| 15 euros[+15.00] | 20 euros[+20.00]|50 euros[+50.00]| 100 euros[+100.00]"
@@ -333,7 +333,7 @@ export default function Artist(props) {
                   className="snipcart-add-item text-sm underline hover:text-red-600"
                   data-item-id={artiste.fields.titreOeuvre3}
                   data-item-price={artiste.fields.prixOeuvre3}
-                  data-item-url="/bizarrebazar"
+                  data-item-url="/"
                   data-item-name={artiste.fields.titreOeuvre3}
                   data-item-custom1-name="Le prix des oeuvres est fixé à un montant minimun. N'hésitez pas à donner plus en soutien!"
                   data-item-custom1-options="0 euros [+0.00]| 5 euros[+5.00]| 10 euros[+10.00]| 15 euros[+15.00] | 20 euros[+20.00]|50 euros[+50.00]| 100 euros[+100.00]"
@@ -412,7 +412,7 @@ export default function Artist(props) {
                   className="snipcart-add-item text-sm underline hover:text-red-600"
                   data-item-id={artiste.fields.titreOeuvre4}
                   data-item-price={artiste.fields.prixOeuvre4}
-                  data-item-url="/bizarrebazar"
+                  data-item-url="/"
                   data-item-name={artiste.fields.titreOeuvre4}
                   data-item-custom1-name="Le prix des oeuvres est fixé à un montant minimun. N'hésitez pas à donner plus en soutien!"
                   data-item-custom1-options="0 euros [+0.00]| 5 euros[+5.00]| 10 euros[+10.00]| 15 euros[+15.00] | 20 euros[+20.00]|50 euros[+50.00]| 100 euros[+100.00]"
@@ -492,7 +492,7 @@ export default function Artist(props) {
                   className="snipcart-add-item text-sm underline hover:text-red-600"
                   data-item-id={artiste.fields.titreOeuvre5}
                   data-item-price={artiste.fields.prixOeuvre5}
-                  data-item-url="/bizarrebazar"
+                  data-item-url="/"
                   data-item-name={artiste.fields.titreOeuvre5}
                   data-item-custom1-name="Le prix des oeuvres est fixé à un montant minimun. N'hésitez pas à donner plus en soutien!"
                   data-item-custom1-options="0 euros [+0.00]| 5 euros[+5.00]| 10 euros[+10.00]| 15 euros[+15.00] | 20 euros[+20.00]|50 euros[+50.00]| 100 euros[+100.00]"
@@ -560,7 +560,7 @@ export default function Artist(props) {
                   className="snipcart-add-item text-sm underline hover:text-red-600"
                   data-item-id={artiste.fields.titreOeuvre6}
                   data-item-price={artiste.fields.prixOeuvre6}
-                  data-item-url="/bizarrebazar"
+                  data-item-url="/"
                   data-item-name={artiste.fields.titreOeuvre6}
                   data-item-custom1-name="Le prix des oeuvres est fixé à un montant minimun. N'hésitez pas à donner plus en soutien!"
                   data-item-custom1-options="0 euros [+0.00]| 5 euros[+5.00]| 10 euros[+10.00]| 15 euros[+15.00] | 20 euros[+20.00]|50 euros[+50.00]| 100 euros[+100.00]"
@@ -628,7 +628,7 @@ export default function Artist(props) {
                   className="snipcart-add-item text-sm underline hover:text-red-600"
                   data-item-id={artiste.fields.titreOeuvre7}
                   data-item-price={artiste.fields.prixOeuvre7}
-                  data-item-url="/bizarrebazar"
+                  data-item-url="/"
                   data-item-name={artiste.fields.titreOeuvre7}
                   data-item-custom1-name="Le prix des oeuvres est fixé à un montant minimun. N'hésitez pas à donner plus en soutien!"
                   data-item-custom1-options="0 euros [+0.00]| 5 euros[+5.00]| 10 euros[+10.00]| 15 euros[+15.00] | 20 euros[+20.00]|50 euros[+50.00]| 100 euros[+100.00]"
