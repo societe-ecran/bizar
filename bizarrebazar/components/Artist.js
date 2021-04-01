@@ -42,7 +42,7 @@ export default function Artist(props) {
     return (
       <svg
         onClick={props.onClick}
-        className= {"arrow arrow--right" + disabeld}
+        className= {"arrow arrow--right md:arrow" + disabeld}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
       >
@@ -114,21 +114,23 @@ export default function Artist(props) {
                 </Carousel>
               )}
 
-              <p className="LibreBaskerville">{artiste.fields.titreOeuvre1}</p>
+              <div className="LibreBaskerville text-sm ">{artiste.fields.titreOeuvre1}</div>
+             <div className='text-sm'>
               <Markdown
                 source={artiste.fields.descriptionOeuvre1}
                 escapeHtml={true}
-              />
-              <p className="LibreBaskerville">
+                className='text-sm '
+              /></div>
+              <div className="LibreBaskerville text-sm">
                 {artiste.fields.prixOeuvre1 == "0"
                   ? "Prix libre"
                   :"Prix : "+ artiste.fields.prixOeuvre1 + " euros"}{" "}
-              </p>
+              </div>
 
               {!artiste.fields.oeuvre1Vendue ? (
                 artiste.fields.tShirt1 ? (
                   <button
-                    className="snipcart-add-item underline hover:text-red-600"
+                    className="snipcart-add-item text-sm underline hover:text-red-600"
                     data-item-id={artiste.fields.titreOeuvre1}
                     data-item-price={artiste.fields.prixOeuvre1}
                     data-item-url="/bizarrebazar"
@@ -136,7 +138,7 @@ export default function Artist(props) {
                     data-item-custom1-name="Le prix des oeuvres est fixé à un montant minimun. N'hésitez pas à donner plus en soutien!"
                     data-item-custom1-options="0 euros [+0.00]| 5 euros[+5.00]| 10 euros[+10.00]| 15 euros[+15.00] | 20 euros[+20.00]|50 euros[+50.00]| 100 euros[+100.00]"
                     data-item-custom2-name="Taille"
-                    data-item-custom2-options="S|M|L"
+                    data-item-custom2-options="S|M|L|XL"
                     data-item-weight={
                       typeof artiste.fields.poidsOeuvre1 == undefined
                         ? 0
@@ -147,7 +149,7 @@ export default function Artist(props) {
                   </button>
                 ) : (
                   <button
-                    className="snipcart-add-item underline hover:text-red-600"
+                    className="snipcart-add-item text-sm underline hover:text-red-600"
                     data-item-id={artiste.fields.titreOeuvre1}
                     data-item-price={artiste.fields.prixOeuvre1}
                     data-item-url="/bizarrebazar"
@@ -214,21 +216,22 @@ export default function Artist(props) {
                   ))}
                 </Carousel>
               )}
-              <p>{artiste.fields.titreOeuvre2}</p>
+              <div className="LibreBaskerville text-sm" >{artiste.fields.titreOeuvre2}</div>
               <Markdown
                 source={artiste.fields.descriptionOeuvre2}
                 escapeHtml={true}
+                className='text-sm '
               />
-              <p>
+              <div className="LibreBaskerville text-sm">
                 {artiste.fields.prixOeuvre2 == "0"
                   ? "Prix libre"
                   : "Prix : "+artiste.fields.prixOeuvre2 + " euros"}{" "}
-              </p>
+              </div>
 
               {!artiste.fields.oeuvre2Vendue ? (
                 artiste.fields.tShirt2 ? (
                   <button
-                    className="snipcart-add-item underline hover:text-red-600"
+                    className="snipcart-add-item text-sm underline hover:text-red-600"
                     data-item-id={artiste.fields.titreOeuvre2}
                     data-item-price={artiste.fields.prixOeuvre2}
                     data-item-url="/bizarrebazar"
@@ -236,7 +239,7 @@ export default function Artist(props) {
                     data-item-custom1-name="Le prix des oeuvres est fixé à un montant minimun. N'hésitez pas à donner plus en soutien!"
                     data-item-custom1-options="0 euros [+0.00]| 5 euros[+5.00]| 10 euros[+10.00]| 15 euros[+15.00] | 20 euros[+20.00]|50 euros[+50.00]| 100 euros[+100.00]"
                     data-item-custom2-name="Taille"
-                    data-item-custom2-options="S|M|L"
+                    data-item-custom2-options="S|M|L|XL"
                     data-item-weight={
                       typeof artiste.fields.poidsOeuvre2 == undefined
                         ? 0
@@ -247,7 +250,7 @@ export default function Artist(props) {
                   </button>
                 ) : (
                   <button
-                    className="snipcart-add-item underline hover:text-red-600"
+                    className="snipcart-add-item text-sm underline hover:text-red-600"
                     data-item-id={artiste.fields.titreOeuvre2}
                     data-item-price={artiste.fields.prixOeuvre2}
                     data-item-url="/bizarrebazar"
@@ -313,20 +316,21 @@ export default function Artist(props) {
                   ))}
                 </Carousel>
               )}
-              <p>{artiste.fields.titreOeuvre3}</p>
+              <div className="LibreBaskerville text-sm">{artiste.fields.titreOeuvre3}</div>
               <Markdown
                 source={artiste.fields.descriptionOeuvre3}
                 escapeHtml={true}
+                className='text-sm '
               />
-              <p>
+              <div className="LibreBaskerville text-sm">
                 {artiste.fields.prixOeuvre3 == "0"
                   ? "Prix libre"
                   :"Prix : "+ artiste.fields.prixOeuvre3 + " euros"}{" "}
-              </p>
+              </div>
 
               {!artiste.fields.oeuvre3Vendue ? (
                 <button
-                  className="snipcart-add-item underline hover:text-red-600"
+                  className="snipcart-add-item text-sm underline hover:text-red-600"
                   data-item-id={artiste.fields.titreOeuvre3}
                   data-item-price={artiste.fields.prixOeuvre3}
                   data-item-url="/bizarrebazar"
@@ -391,20 +395,21 @@ export default function Artist(props) {
                   ))}
                 </Carousel>
               )}
-              <p>{artiste.fields.titreOeuvre4}</p>
+              <div className="LibreBaskerville text-sm">{artiste.fields.titreOeuvre4}</div>
               <Markdown
                 source={artiste.fields.descriptionOeuvre4}
                 escapeHtml={true}
+                className='text-sm '
               />
-              <p>
+              <div className="LibreBaskerville text-sm">
                 {artiste.fields.prixOeuvre4 == "0"
                   ? "Prix libre"
                   :"Prix : "+ artiste.fields.prixOeuvre4 + " euros"}{" "}
-              </p>
+              </div>
 
               {!artiste.fields.oeuvre4Vendue ? (
                 <button
-                  className="snipcart-add-item underline hover:text-red-600"
+                  className="snipcart-add-item text-sm underline hover:text-red-600"
                   data-item-id={artiste.fields.titreOeuvre4}
                   data-item-price={artiste.fields.prixOeuvre4}
                   data-item-url="/bizarrebazar"
@@ -470,20 +475,21 @@ export default function Artist(props) {
                   ))}
                 </Carousel>
               )}
-              <p>{artiste.fields.titreOeuvre5}</p>
+              <div>{artiste.fields.titreOeuvre5}</div>
               <Markdown
                 source={artiste.fields.descriptionOeuvre5}
                 escapeHtml={true}
+                className='text-sm '
               />
-              <p>
+              <div className="LibreBaskerville text-sm" >
                 {artiste.fields.prixOeuvre5 == "0"
                   ? "Prix libre"
                   :"Prix : "+ artiste.fields.prixOeuvre5 + " euros"}{" "}
-              </p>
+              </div>
 
               {!artiste.fields.oeuvre5Vendue ? (
                 <button
-                  className="snipcart-add-item underline hover:text-red-600"
+                  className="snipcart-add-item text-sm underline hover:text-red-600"
                   data-item-id={artiste.fields.titreOeuvre5}
                   data-item-price={artiste.fields.prixOeuvre5}
                   data-item-url="/bizarrebazar"
@@ -537,20 +543,21 @@ export default function Artist(props) {
                 //   ))}
                 // </Carousel>
               )}
-              <p>{artiste.fields.titreOeuvre6}</p>
+              <div className="LibreBaskerville text-sm">{artiste.fields.titreOeuvre6}</div>
               <Markdown
                 source={artiste.fields.descriptionOeuvre6}
                 escapeHtml={true}
+                className='text-sm '
               />
-              <p>
+              <div className="LibreBaskerville text-sm">
                 {artiste.fields.prixOeuvre6 == "0"
                   ? "Prix libre"
                   :"Prix : "+ artiste.fields.prixOeuvre6 + " euros"}{" "}
-              </p>
+              </div>
 
               {!artiste.fields.oeuvre6Vendue ? (
                 <button
-                  className="snipcart-add-item underline hover:text-red-600"
+                  className="snipcart-add-item text-sm underline hover:text-red-600"
                   data-item-id={artiste.fields.titreOeuvre6}
                   data-item-price={artiste.fields.prixOeuvre6}
                   data-item-url="/bizarrebazar"
@@ -604,20 +611,21 @@ export default function Artist(props) {
                 //   ))}
                 // </Carousel>
               )}
-              <p>{artiste.fields.titreOeuvre7}</p>
+              <div className="LibreBaskerville text-sm">{artiste.fields.titreOeuvre7}</div>
               <Markdown
                 source={artiste.fields.descriptionOeuvre7}
                 escapeHtml={true}
+                className='text-sm '
               />
-              <p>
+              <div className="LibreBaskerville text-sm">
                 {artiste.fields.prixOeuvre7 == "0"
                   ? "Prix libre"
                   :"Prix : "+artiste.fields.prixOeuvre7 + " euros"}{" "}
-              </p>
+              </div>
 
               {!artiste.fields.oeuvre7Vendue ? (
                 <button
-                  className="snipcart-add-item underline hover:text-red-600"
+                  className="snipcart-add-item text-sm underline hover:text-red-600"
                   data-item-id={artiste.fields.titreOeuvre7}
                   data-item-price={artiste.fields.prixOeuvre7}
                   data-item-url="/bizarrebazar"
