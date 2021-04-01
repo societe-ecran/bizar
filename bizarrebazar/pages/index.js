@@ -15,6 +15,7 @@ export default function Home({ artistes = [] }, props) {
 
   fisherYatesShuffle(artistes);
 
+  console.log(artistes)
   return (
     <html lang="fr">
       <div className=" bgColor scrollBarColor">
@@ -82,9 +83,9 @@ export default function Home({ artistes = [] }, props) {
               <span className="arkm LibreBaskerville">
                 <strong>Bizarre</strong> Bazar{" "}
               </span>
-              BizarreBazar a été créé pour tenter de rendre visible un geste qui
+              BizarreBazar a été créé pour rendre visible un geste qui
               nous tient à coeur : l’infinie puissance créatrice de nos proches
-              au profit de l’achat de l’Amicale. Vous trouverez donc ici des
+              au profit de l’achat de l’Amicale du futur. Vous trouverez donc ici des
               pièces toutes fantastiques qui nous ont été généreusement données
               par nos ami.e.s musicien.nes, artistes, plasticien.nes,
               illustrateur.rices, photographes, imprimeuse.rs, tisserand.es,
@@ -104,8 +105,8 @@ export default function Home({ artistes = [] }, props) {
               >
                 les supers compiles de l’Amicale{" "}
               </a>
-              que les copines et copains musiciens nous ont concoctés mais aussi
-              une série spéciale de t-shirts imprimé dans les ateliers de{" "}
+              que les copines et copains musiciens nous ont concoctées mais aussi
+              une série spéciale de t-shirts imprimés dans les ateliers de{" "}
               <a
                 className="underline text-black underline text-black hover:text-red-600"
                 href="https://www.grrrndzero.org/"

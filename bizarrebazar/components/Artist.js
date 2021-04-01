@@ -51,6 +51,7 @@ export default function Artist(props) {
     );
   }
 
+
   return (
     <div className="border-t border-black pt-3 ml-3 mr-6 md:ml-6 md:mr-12 LibreBaskerville word-break">
       <div className="mb-3">
