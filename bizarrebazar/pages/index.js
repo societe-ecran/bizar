@@ -15,7 +15,6 @@ export default function Home({ artistes = [] }, props) {
 
   fisherYatesShuffle(artistes);
 
-  console.log(artistes)
   return (
     <html lang="fr">
       <div className=" bgColor scrollBarColor">
@@ -83,11 +82,11 @@ export default function Home({ artistes = [] }, props) {
               <span className="arkm LibreBaskerville">
                 <strong>Bizarre</strong> Bazar{" "}
               </span>
-              BizarreBazar a été créé pour rendre visible un geste qui
-              nous tient à coeur : l’infinie puissance créatrice de nos proches
-              au profit de l’achat de l’Amicale du futur. Vous trouverez donc ici des
-              pièces toutes fantastiques qui nous ont été généreusement données
-              par nos ami.e.s musicien.nes, artistes, plasticien.nes,
+              a été créé pour rendre visible un geste qui nous tient à coeur :
+              l’infinie puissance créatrice de nos proches au profit de l’achat
+              de l’Amicale du futur. Vous trouverez donc ici des pièces toutes
+              fantastiques qui nous ont été généreusement données par nos
+              ami.e.s musicien.nes, artistes, plasticien.nes,
               illustrateur.rices, photographes, imprimeuse.rs, tisserand.es,
               potier.es, bijoutier.es, graphistes, designeuse.rs textile,
               peintres… Vous avez la possibilité de les acheter si elles vous
@@ -105,8 +104,8 @@ export default function Home({ artistes = [] }, props) {
               >
                 les supers compiles de l’Amicale{" "}
               </a>
-              que les copines et copains musiciens nous ont concoctées mais aussi
-              une série spéciale de t-shirts imprimés dans les ateliers de{" "}
+              que les copines et copains musiciens nous ont concoctées mais
+              aussi une série spéciale de t-shirts imprimés dans les ateliers de{" "}
               <a
                 className="underline text-black underline text-black hover:text-red-600"
                 href="https://www.grrrndzero.org/"
@@ -203,23 +202,31 @@ export default function Home({ artistes = [] }, props) {
           })}
           <div className=" border-t border-black text-xl LibreBaskerville">
             <div className="pt-2 pb-24 ml-3 mr-3">
-              Merci beaucoup à Åbåke, Bertoyas, Bikesabbath, Brulex, Chloé
-              Bouvarel, Aude Barrio, Ivan Brun, Rachid Bulbien, Bouteilleurz,
-              Marie Colin-Madan, Abraham Diaz, Lise Dua, Julien Dupont, Margaux
-              Duseigneur, EMDT, Benoît François, Lucas Ferrero, Antoine Fisher,
+              Bouvarel, Aude Barrio, Jean Bender, Boule de Cristal, Bravo
+              Tounky, Ivan Brun, Baptiste Brunello, Rachid Bulbien,
+              Bouteilleurz, Cancellled, Marie Colin-Madan, Colombey , Chocolat
+              Billy, Citerne Souple, Danse Musique Rhone Alpes, Abraham Diaz,
+              Douster, Lise Dua, Julien Dupont, Margaux Duseigneur, dYmanche,
+              EMDT, Faux Départ, Benoît François, Lucas Ferrero, Antoine Fisher,
               Marie-Anita Gaube, Alaric Garnier, Lucile Gautier, Vincent
-              Guillermin, Huard, Marion Jdanoff, Jess, Zad Kokar, Romano Krang,
-              Félicité Landrivon, Laho, Lashka, Oriane Lassus, Valentin Lergès,
-              Service Local, Gaelle Loth, La Tòrna, Liquid Test Press, Julie
-              Kieffer, Hugues La Blanche, Yannis La Macchia, Stephen Loye, Diane
+              Guillermin, Will Guthrie, Huard, Heimat, Héron Cendré, Johnny
+              Haway, Marion Jdanoff, Jess, Zad Kokar, Romano Krang, Julie
+              Kieffer, Félicité Landrivon, Laho, Lashka, Oriane Lassus, Valentin
+              Lergès, Litige, Service Local, Gaelle Loth, La Tòrna, Liquid Test
+              Press, Hugues La Blanche, Yannis La Macchia, Stephen Loye, Diane
               Malatesta, Lou Masduraud, Antoine Machelot, Suka Mabuk, Barbara
-              Meuli, Éditions Nuit Noire, Nagawika, Margaux Othats, Atelier Peso
+              Meuli, Massicot, Maraudeur, Mini golf, Mimo The MUSICAL, Mosa87,
+              Musique Guérissante, Éditions Nuit Noire, Nagawika, Orchestre Tout
+              Puissant Marcel Duchamp, Margaux Othats, Od Bongo, Atelier Peso
               Pluma, Tristan Perreton, Thomas Perrodin, Ratcharge, Coline
-              Rosoux, Simon Roussin, Octave Rimbert-Rivière, Soleil de nuit,
-              Henri Tattooer, Renaud Thomas, Torpe, Laurène Vernet, Lia Vé, Ema
-              Xp, pour vos généreux dons. Merci à Olivier Bral, Clément Rossi,
-              Clémentine Léon, Gautier Scerra, et Hugues pour la réalisation des
-              impressions. Lise, Romain, Colline, pour la compilation.
+              Rosoux, Simon Roussin, Octave Rimbert-Rivière, Scarlatine, Soleil
+              de nuit, Sacrifice Seul, Henri Tattooer, Taulard, Terrine, Renaud
+              Thomas, Torpe, Laurène Vernet, Lia Vé, Ema Xp, pour vos généreux
+              dons. <br/>
+              
+              Merci à Olivier Bral, Clément Rossi, Clémentine Léon,
+              Gautier Scerra, et Hugues pour la réalisation des impressions.
+              Lise, Romain, Colline, pour la compilation.
             </div>
           </div>
         </Layout>
