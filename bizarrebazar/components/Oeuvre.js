@@ -1,10 +1,9 @@
 import Markdown from "react-markdown";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
-import React, { useState } from "react";
+import React from "react";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
-import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { useMediaQuery } from "../utils/useMediaquery";
 import Image from "next/image";

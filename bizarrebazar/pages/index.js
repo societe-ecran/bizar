@@ -5,7 +5,8 @@ import React from "react";
 import "react-medium-image-zoom/dist/styles.css";
 import Artist from "../components/Artist";
 
-export default function Home({ artistes = [] }, props) {
+export default function Home(props) {
+
   function fisherYatesShuffle(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
@@ -13,7 +14,8 @@ export default function Home({ artistes = [] }, props) {
     }
   }
 
-  fisherYatesShuffle(artistes);
+  fisherYatesShuffle(props.artisteSoldOut);
+  fisherYatesShuffle(props.artisteAvailable);
 
   return (
     <html lang="fr">
@@ -178,28 +180,16 @@ export default function Home({ artistes = [] }, props) {
               Pour plus de renseignements : bizarrebazar@riseup.net.
             </div>
           </div>
-
-          {/*<div className="pt-3 mx-6 text-xl pb-3">
-              <div className="arkm border-b border-t border-black py-1 mb-3">
-                <a
-                  className="textDecorationNone hover:text-red-600"
-                  href="https://amicalementvotre.bandcamp.com/"
-                  target="_blank"
-                >
-                  COMPILE amicalement votre --COMPILE amicalement votre -- COMPILE amicalement votre --
-                  
-                </a>
-              </div>
-              <img
-                src="https://res.cloudinary.com/dbqfcp9vd/image/upload/v1616165428/illustration/compile_ddzfu2.jpg"
-                alt="cassette compil de l'Amicale!"
-                className="tailleImage"
-              ></img>
-            </div>*/}
-
-          {artistes.map((artiste, i) => {
+ {props.artisteAvailable.map((artiste, i) => {
             return <Artist artiste={artiste} />;
           })}
+
+          {props.artisteSoldOut.map((artiste, i) => {
+            return <Artist artiste={artiste} />;
+          })}
+
+         
+
           <div className=" border-t border-black text-xl LibreBaskerville">
             <div className="pt-2 pb-24 ml-3 mr-3">
               Bouvarel, Aude Barrio, Jean Bender, Boule de Cristal, Bravo
@@ -221,12 +211,11 @@ export default function Home({ artistes = [] }, props) {
               Pluma, Tristan Perreton, Thomas Perrodin, Ratcharge, Coline
               Rosoux, Simon Roussin, Octave Rimbert-Rivière, Scarlatine, Soleil
               de nuit, Sacrifice Seul, Henri Tattooer, Taulard, Terrine, Renaud
-              Thomas, Torpe, Laurène Vernet, Lia Vé, Ema Xp, pour vos généreux
-              dons. <br/>
-              
-              Merci à Olivier Bral, Clément Rossi, Clémentine Léon,
-              Gautier Scerra, et Hugues pour la réalisation des impressions.
-              Lise, Romain, Colline, pour la compilation.
+              Thomas, Torpe, Laurène Vernet, Lia Vé, Ema Xp pour vos généreux
+              dons. <br />
+              Merci à Olivier Bral, Clément Rossi, Clémentine Léon, Gautier
+              Scerra, et Hugues pour la réalisation des impressions. Lise,
+              Romain, Colline,Antoine Nouel pour la compilation.
             </div>
           </div>
         </Layout>
@@ -249,9 +238,88 @@ export async function getStaticProps() {
     .getEntries({ content_type: "artiste" })
     .then((response) => response.items);
 
+  const artisteSoldOut = await client
+    .getEntries({
+      content_type: "artiste",
+      "fields.soldOut": "true",
+    })
+    .then((response) => response.items);
+
+  const artisteAvailable = await client
+    .getEntries({
+      content_type: "artiste",
+      "fields.soldOut[nin]": "true",
+    })
+    .then((response) => response.items);
   return {
     props: {
       artistes,
+      artisteSoldOut,
+      artisteAvailable,
     },
   };
 }
+
+
+
+// const artisteVendus = [];
+// for (let i = 0; i < artistes.length; i++) {
+//   if (
+//     typeof artistes[i].fields.titreOeuvre2 === "undefined" &&
+//     artistes[i].fields.oeuvre1Vendue == true
+//   ) {
+//     artisteVendus.push(artistes[i]);
+//     console.log(artistes.slice(5,1))
+//   }
+//   if (
+//     typeof artistes[i].fields.titreOeuvre3 == "undefined" &&
+//     artistes[i].fields.oeuvre1Vendue == true &&
+//     artistes[i].fields.oeuvre2Vendue == true
+//   ) {
+//     artisteVendus.push(artistes[i]);
+//   } else if (
+//     typeof artistes[i].fields.titreOeuvre4 == "undefined" &&
+//     artistes[i].fields.oeuvre1Vendue == true &&
+//     artistes[i].fields.oeuvre2Vendue == true &&
+//     artistes[i].fields.oeuvre3Vendue == true
+//   ) {
+//     artisteVendus.push(artistes[i]);
+//   } else if (
+//     typeof artistes[i].fields.titreOeuvre5 == "undefined" &&
+//     artistes[i].fields.oeuvre1Vendue == true &&
+//     artistes[i].fields.oeuvre2Vendue == true &&
+//     artistes[i].fields.oeuvre3Vendue == true &&
+//     artistes[i].fields.oeuvre4Vendue == true
+//   ) {
+//     artisteVendus.push(artistes[i]);
+//   } else if (
+//     typeof artistes[i].fields.titreOeuvre6 == "undefined" &&
+//     artistes[i].fields.oeuvre1Vendue == true &&
+//     artistes[i].fields.oeuvre2Vendue == true &&
+//     artistes[i].fields.oeuvre3Vendue == true &&
+//     artistes[i].fields.oeuvre4Vendue == true &&
+//     artistes[i].fields.oeuvre5Vendue == true
+//   ) {
+//     artisteVendus.push(artistes[i]);
+//   } else if (
+//     typeof artistes[i].fields.titreOeuvre7 == "undefined" &&
+//     artistes[i].fields.oeuvre1Vendue == true &&
+//     artistes[i].fields.oeuvre2Vendue == true &&
+//     artistes[i].fields.oeuvre3Vendue == true &&
+//     artistes[i].fields.oeuvre4Vendue == true &&
+//     artistes[i].fields.oeuvre5Vendue == true &&
+//     artistes[i].fields.oeuvre6Vendue == true
+//   ) {
+//     artisteVendus.push(artistes[i]);
+//   }
+// }
+// console.log(artisteVendus)
+// for (let j=0;j<artistes.length;j++) {
+
+//  for(let i=0;i<artisteVendus.length;i++){
+
+//   if (artisteVendus[i].fields.nomDeLartiste === artistes[j].fields.nomDeLartiste){
+
+//   }
+//  }
+// };
