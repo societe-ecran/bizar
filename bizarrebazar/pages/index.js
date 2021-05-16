@@ -4,9 +4,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import "react-medium-image-zoom/dist/styles.css";
 import Artist from "../components/Artist";
+import ArtisteNouvelleVague from "../components/ArtisteNouvelleVague";
+import Image from "next/image";
 
 export default function Home(props) {
-
   function fisherYatesShuffle(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
@@ -16,6 +17,7 @@ export default function Home(props) {
 
   fisherYatesShuffle(props.artisteSoldOut);
   fisherYatesShuffle(props.artisteAvailable);
+  fisherYatesShuffle(props.artisteNouvelleVagueAvailable)
 
   return (
     <html lang="fr">
@@ -180,15 +182,22 @@ export default function Home(props) {
               Pour plus de renseignements : bizarrebazar@riseup.net.
             </div>
           </div>
- {props.artisteAvailable.map((artiste, i) => {
+
+          {props.artisteNouvelleVagueAvailable.map((artiste, i) => {
+            return <ArtisteNouvelleVague artiste={artiste} />;
+          })}
+
+          {props.artisteAvailable.map((artiste, i) => {
             return <Artist artiste={artiste} />;
+          })}
+
+          {props.artisteNouvelleVagueSoldOut?.map((artiste, i) => {
+            return <ArtisteNouvelleVague artiste={artiste} />;
           })}
 
           {props.artisteSoldOut.map((artiste, i) => {
             return <Artist artiste={artiste} />;
           })}
-
-         
 
           <div className=" border-t border-black text-xl LibreBaskerville">
             <div className="pt-2 pb-24 ml-3 mr-3">
@@ -234,9 +243,9 @@ export async function getStaticProps() {
     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
   });
 
-  const artistes = await client
-    .getEntries({ content_type: "artiste" })
-    .then((response) => response.items);
+  // const artistes = await client
+  //   .getEntries({ content_type: "artiste" })
+  //   .then((response) => response.items);
 
   const artisteSoldOut = await client
     .getEntries({
@@ -251,75 +260,28 @@ export async function getStaticProps() {
       "fields.soldOut[nin]": "true",
     })
     .then((response) => response.items);
+
+  const artisteNouvelleVagueAvailable = await client
+    .getEntries({
+      content_type: "artisteNouvelleVague",
+      "fields.soldOut[nin]": "true",
+    })
+    .then((response) => response.items);
+
+  const artisteNouvelleVagueSoldOut = await client
+    .getEntries({
+      content_type: "artisteNouvelleVague",
+      "fields.soldOut": "true",
+    })
+    .then((response) => response.items);
+
   return {
     props: {
-      artistes,
+      // artistes,
       artisteSoldOut,
       artisteAvailable,
+      artisteNouvelleVagueAvailable,
+      artisteNouvelleVagueSoldOut,
     },
   };
 }
-
-
-
-// const artisteVendus = [];
-// for (let i = 0; i < artistes.length; i++) {
-//   if (
-//     typeof artistes[i].fields.titreOeuvre2 === "undefined" &&
-//     artistes[i].fields.oeuvre1Vendue == true
-//   ) {
-//     artisteVendus.push(artistes[i]);
-//     console.log(artistes.slice(5,1))
-//   }
-//   if (
-//     typeof artistes[i].fields.titreOeuvre3 == "undefined" &&
-//     artistes[i].fields.oeuvre1Vendue == true &&
-//     artistes[i].fields.oeuvre2Vendue == true
-//   ) {
-//     artisteVendus.push(artistes[i]);
-//   } else if (
-//     typeof artistes[i].fields.titreOeuvre4 == "undefined" &&
-//     artistes[i].fields.oeuvre1Vendue == true &&
-//     artistes[i].fields.oeuvre2Vendue == true &&
-//     artistes[i].fields.oeuvre3Vendue == true
-//   ) {
-//     artisteVendus.push(artistes[i]);
-//   } else if (
-//     typeof artistes[i].fields.titreOeuvre5 == "undefined" &&
-//     artistes[i].fields.oeuvre1Vendue == true &&
-//     artistes[i].fields.oeuvre2Vendue == true &&
-//     artistes[i].fields.oeuvre3Vendue == true &&
-//     artistes[i].fields.oeuvre4Vendue == true
-//   ) {
-//     artisteVendus.push(artistes[i]);
-//   } else if (
-//     typeof artistes[i].fields.titreOeuvre6 == "undefined" &&
-//     artistes[i].fields.oeuvre1Vendue == true &&
-//     artistes[i].fields.oeuvre2Vendue == true &&
-//     artistes[i].fields.oeuvre3Vendue == true &&
-//     artistes[i].fields.oeuvre4Vendue == true &&
-//     artistes[i].fields.oeuvre5Vendue == true
-//   ) {
-//     artisteVendus.push(artistes[i]);
-//   } else if (
-//     typeof artistes[i].fields.titreOeuvre7 == "undefined" &&
-//     artistes[i].fields.oeuvre1Vendue == true &&
-//     artistes[i].fields.oeuvre2Vendue == true &&
-//     artistes[i].fields.oeuvre3Vendue == true &&
-//     artistes[i].fields.oeuvre4Vendue == true &&
-//     artistes[i].fields.oeuvre5Vendue == true &&
-//     artistes[i].fields.oeuvre6Vendue == true
-//   ) {
-//     artisteVendus.push(artistes[i]);
-//   }
-// }
-// console.log(artisteVendus)
-// for (let j=0;j<artistes.length;j++) {
-
-//  for(let i=0;i<artisteVendus.length;i++){
-
-//   if (artisteVendus[i].fields.nomDeLartiste === artistes[j].fields.nomDeLartiste){
-
-//   }
-//  }
-// };

@@ -74,7 +74,8 @@
 }
 
 .tailleImage{
-  width:600px;
+  width:380px;
+  height:380px
 }
 
 .bgColor{
@@ -127,7 +128,9 @@
 @media(min-width: 768px){
   .tailleImage{
   width:600px;
+  height:600px
   }
+
   .arrow--right {
     left: auto;
     right: 26px;
